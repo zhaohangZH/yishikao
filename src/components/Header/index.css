@@ -1,8 +1,15 @@
 .header{
-    width:1200px;
+    width: 100%;
+    min-width:1200px;
     height: 80px;
-    margin: 0 auto;
     background: #fff;
+    -webkit-box-shadow: 1px 1px 20px #ccc;
+    -moz-box-shadow:  1px 1px 20px #ccc;
+    box-shadow: 1px 1px 20px #ccc;
+}
+.header-content{
+    width: 1200px;
+    margin: 0 auto;
 }
 .header-logo{
     display: inline-block;
@@ -17,6 +24,9 @@
     line-height: 80px;
     padding: 0 25px;
 }
+.header ul .active{
+    color: #f5b00b;
+}
 .header-login{
     display: inline-block;
     line-height: 80px;
@@ -25,4 +35,7 @@
 }
 .header-login a{
     margin:0 22px;
+}
+.header-login .active{
+    color: #f5b00b;
 }

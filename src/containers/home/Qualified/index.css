@@ -32,6 +32,8 @@
     top:0;
     /*height: 280px;*/
     margin-left: 53px;
+    -webkit-box-shadow: 1px 1px 22px 0 #ccc;
+    -moz-box-shadow:  1px 1px 22px 0 #ccc;
     box-shadow: 1px 1px 22px 0 #ccc;
     transition:top .3s;
     -moz-transition:top .3s; /* Firefox 4 */

@@ -12,6 +12,10 @@ body {
   font-family: "Microsoft YaHei";
   font-size:14px;
   color:#333;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 /*h1, h2, h3, h4, h5, h6{font-weight:normal;}*/
 ul,ol {

@@ -12,6 +12,9 @@
     margin-top: 130px;
     margin-right: 95px;
     background: #ffffff;
+    -webkit-box-shadow: 1px 1px 20px 0 #999;
+    -moz-box-shadow:  1px 1px 20px 0 #999;
+    box-shadow:  1px 1px 20px 0 #999;
 }
 .logins>span{
     display: inline-block;

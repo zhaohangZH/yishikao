@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
+import jtup01 from '../../images/jtup01.png';
+import jtup02 from '../../images/jtup02.png';
+import jtdow01 from '../../images/jtdow01.png';
+import jtdow02 from '../../images/jtdow02.png';
 import './index.css';
-// import Certificatetype from './Certificatetype';
-import Certificateclass from './Certificateclass';
-import Certificatesubject from './Certificatesubject';
 class Certificate extends Component {
     constructor(){
         super()
         this.state={
-            Choicetype:['面试','笔试','3'],
+            Choicetype:['面试','笔试'],
             Choiceclass:['1','2','3'],
             Choicesubject:['1','2','3','4'],
             typekey:0,
             classkey:0,
-            subjectkey:0
+            subjectkey:0,
+            sortClass:1,//排序激活状态
+            sortRqJt:true,//人气排序
+            sortPriceJt:true//价格排序
         }
     }
     handleTypeClick(key,event){
@@ -27,6 +31,20 @@ class Certificate extends Component {
     handleSubjectClick(key,event){
         this.setState({subjectkey:key});
         console.log(key);
+    }
+    //人气排序
+    handleRqClick(){
+        this.setState({
+            sortClass:1,
+            sortRqJt:!this.state.sortRqJt
+        })
+    }
+    //价格排序
+    handlePriceClick(){
+        this.setState({
+            sortClass:0,
+            sortPriceJt:!this.state.sortPriceJt
+        })
     }
     render() {
         return (
@@ -54,6 +72,15 @@ class Certificate extends Component {
                             {this.state.Choicesubject.map((arr,i)=>{
                                 return (<li className={this.state.subjectkey===i?'active':""} key={i} onClick={this.handleSubjectClick.bind(this,i)}>{arr}</li>)
                             })}
+                        </ul>
+                    </div>
+                </div>
+                <div className="sort-content">
+                    <div className="sort-text">
+                        <span>全部</span>
+                        <ul>
+                            <li className={this.state.sortClass?'active':''} onClick={this.handleRqClick.bind(this)}>人气优先{this.state.sortClass?(this.state.sortRqJt?<img src={jtup01} alt=""/>:<img src={jtdow01} alt=""/>):((this.state.sortRqJt?<img src={jtup02} alt=""/>:<img src={jtdow02} alt=""/>))}</li>
+                            <li className={this.state.sortClass?'':'active'} onClick={this.handlePriceClick.bind(this)}>价格优先{this.state.sortClass?(this.state.sortPriceJt?<img src={jtup02} alt=""/>:<img src={jtdow02} alt=""/>):((this.state.sortPriceJt?<img src={jtup01} alt=""/>:<img src={jtdow01} alt=""/>))}</li>
                         </ul>
                     </div>
                 </div>

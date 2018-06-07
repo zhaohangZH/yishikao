@@ -57,3 +57,28 @@
     background: -moz-linear-gradient(top left,#fea60d,#fece0a); /* Firefox 3.6 - 15 */
     background: linear-gradient(top left,#fea60d,#fece0a); /* 标准的语法 */
 }
+/*人气价格排序*/
+.sort-content{
+    width: 100%;
+    min-width: 1200px;
+    background: #f5f3f4;
+}
+.sort-text{
+    width: 1200px;
+    margin: 0 auto;
+    padding:0 60px;
+    line-height: 40px;
+}
+.sort-text span{
+    margin-right: 14px;
+}
+.sort-text ul{
+    display: inline-block;
+}
+.sort-text li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.sort-text .active{
+    color:#f67307;
+}
