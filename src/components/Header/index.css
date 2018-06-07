@@ -1,0 +1,28 @@
+.header{
+    width:1200px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+}
+.header-logo{
+    display: inline-block;
+
+}
+.header ul{
+    display: inline-block;
+    margin-left:60px;
+}
+.header ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 25px;
+}
+.header-login{
+    display: inline-block;
+    line-height: 80px;
+    float: right;
+    margin-right: 60px;
+}
+.header-login a{
+    margin:0 22px;
+}

@@ -1,0 +1,37 @@
+.Home{
+    width: 100%;
+    min-width: 1200px;
+    overflow:hidden;
+}
+.home-advert{
+    width: 100%;
+    min-width: 1200px;
+    height: 130px;
+    margin-top: 110px;
+    background: url("../../images/advert.png")no-repeat;
+    background-size: 1940px 100%;
+    background-position: center center;
+}
+.home-advert>div{
+    width: 1200px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.home-advert-erwm{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 0 32px;
+    border-radius: 3px;
+    vertical-align: center;
+    background: #ffffff;
+}
+.home-advert span{
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+    line-height: 24px;
+    margin-top:15px;
+    text-shadow: 3px 2px 5px #888888;
+}

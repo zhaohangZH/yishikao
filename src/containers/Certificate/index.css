@@ -1,0 +1,59 @@
+.Certificate{
+    width: 1200px;
+    margin: 0 auto;
+}
+.Certificate-box{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.Certificate-type{
+    width: 100%;
+    padding:0 60px;
+}
+.Certificate-choice{
+    display: inline-block;
+    padding: 25px 0;
+    margin-right: 14px;
+    color: #666;
+}
+.Certificate-link{
+    display: inline-block;
+    padding: 25px 0;
+}
+.Certificate-ul{
+    display: inline-block;
+}
+.Certificate-ul li{
+    display: inline-block;
+}
+.Certificate-ul li a{
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 10px;
+}
+.Certificate-ul li .active{
+    background:url("../../images/login-gj.png")no-repeat;
+}
+
+.Certificatetype{
+    display: inline-block;
+    padding: 25px 0;
+}
+.Certificate-ul{
+    display: inline-block;
+}
+.Certificate-ul li{
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 14px;
+    cursor: pointer;
+    border-radius:50px;
+}
+.Certificate-ul .active{
+    color: #ffffff;
+    background:-webkit-linear-gradient(top left,#fea60d,#fece0a);
+    background: -o-linear-gradient(top left,#fea60d,#fece0a); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top left,#fea60d,#fece0a); /* Firefox 3.6 - 15 */
+    background: linear-gradient(top left,#fea60d,#fece0a); /* 标准的语法 */
+}

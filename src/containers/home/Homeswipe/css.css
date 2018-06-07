@@ -1,0 +1,11 @@
+.carousel{
+    margin: 0 auto;
+    width:1940px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.carousel img{
+    width: 100%;
+}
